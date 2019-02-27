@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
-  s.name          = "CoreBitcoin"
+  s.name          = "TokenCoreDep"
   s.version       = "0.0.1"
-  s.summary       = "CoreBitcoin"
+  s.summary       = "The libraries token core need"
 
   s.description   = <<-DESC
-  Ethereum Core Library powering imToken iOS app.
+  The libaray contains the CoreBitcoin and libscrypt.
   DESC
 
   s.homepage      = "https://token.im"
@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
     file: "LICENSE"
   }
 
-  s.author        = { "James Chen" => "james@ashchan.com" }
+  s.author        = { "Neal Xu" => "imxuneal@gmail.com" }
   s.platform      = :ios, "9.0"
 
-  s.source        = { :git => "https://github.com/consenlabs/ios-token-core.git", :tag => "#{s.version}" }
+  s.source        = { :git => "git@github.com:consenlabs/token-core-ios-dep.git", :tag => "#{s.version}" }
   s.source_files  = "CoreBitcoin/*.{h,m,c}", "libscrypt/*.{h,m,c}"
   s.exclude_files = ['*+Tests.{h,m}']
   s.requires_arc = true
